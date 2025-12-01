@@ -13,7 +13,7 @@ import subprocess
 
 def getDevEmailForCommit(repo_path_param, hash_):
     author_emails = []
-
+    password = "12345"
     cdCommand     = "cd " + repo_path_param + " ; "
     commitCountCmd= " git log --format='%ae'" + hash_ + "^!"
     command2Run   = cdCommand + commitCountCmd
